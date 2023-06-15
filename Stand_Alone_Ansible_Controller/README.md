@@ -1,6 +1,8 @@
-# ANSIBLE CONTROLLER IN ALPINE CONTAINER
+# ANSIBLE CONTROLLER IN ALPINE LINUX CONTAINER
 
 If you are looking for a quick Ansible controller in a lightweight container image, this repository contains an Ansible controller on an Alpine Linux Image.
+
+Final Image Size : 520MB
 
 ## ""
 
@@ -15,7 +17,7 @@ This repo is intended to setup 1 controller node capable to comunicate to your l
 
 | NODE TYPE  |    IMAGE    |  IMAGE NAME  | CONTAINER NAME | NETWORK | NETWORK MODE |
 | :--------: | :---------: | :----------: | :------------: | :-----: | :----------: |
-| controller | alpine:3.14 | ans/alp/ctrl |    ans-ctrl    | default |    bridge    |
+| controller | alpine:3.14 | ans/alp/ctrl |   ans-ctrllr   | default |    bridge    |
 
 Image and container configuration can be found in `docker-compose.yml` file.
 
@@ -24,7 +26,7 @@ Image and container configuration can be found in `docker-compose.yml` file.
 Clone the repository to your machine.
 
 ```sh
-    $ <Pending> 
+    $ git clone https://github.com/Vanguard94-RR/Ansible
 ```
 
 Run the following command which will start pulling the base image's and build the containers.
