@@ -1,0 +1,20 @@
+version: "3.8"
+networks:
+  anslab:
+    driver: bridge
+
+services:
+    # Controller node is where ansible will be installed
+  # Image will be created with name "ans/alpine/controller"
+  # container will be created with name "anscontroller"
+  controller:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    image: ans/alp/ctrl
+    container_name: ans-ctrllr
+#     volumes:
+#       - /home/ansuser/
+    networks:
+       - anslab
+    pull_policy: build
