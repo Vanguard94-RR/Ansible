@@ -16,5 +16,5 @@ services:
 #     volumes:
 #       - /home/ansuser/
     networks:
-       - anslab
+      - anslab
     pull_policy: build
